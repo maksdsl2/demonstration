@@ -171,7 +171,7 @@ body {
 }
 
 .banner {
-  background-image: url(/img/Rectangle2.png);
+  background-image: url(../img/Rectangle2.png);
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
