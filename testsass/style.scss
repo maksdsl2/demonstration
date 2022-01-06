@@ -1,0 +1,298 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+    $grey:#EFEFEF;
+	$accent:#66C05D;
+	$dark:#333333;
+
+
+	body{
+		background-color:$grey;
+		font-family: 'Roboto', sans-serif;
+	}
+
+.container{
+max-width: 1110px;
+margin: 0 auto;
+}
+
+.nav ul{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	align-items: center;
+	
+}
+
+.nav-link{
+	margin: 0 30px 0 0;
+	color: $dark;
+	line-height: 16px;
+}
+
+.nav-bg-white{
+	background-color: white;
+	
+
+}
+
+.nav-item {
+	display: flex;
+	justify-content: space-between;
+	height: 120px;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-logo img{
+	width: 80px;
+	height: 80px;
+	margin: 0 20px 0 0;
+}
+.nav-logo h1{
+	font-size: 36px;
+	font-weight: 700;
+	color:$accent;
+	text-transform: uppercase;
+}
+.nav-number {
+	display: flex;
+	align-items: center;
+}
+
+.nav-number p{
+	font-size: 16px;
+	color: $dark;
+	margin: 0 40px 0 0;
+
+}
+.nav-number a{
+border: 2px solid $accent;
+border-radius:40px ;
+padding: 10px 26px;
+color: $dark;
+transition: 0.3s ease;
+}
+
+.nav-number a:hover{
+	background-color: $accent;
+	color: $grey;
+}
+.nav-bg-white2{
+
+	background-color: white;
+	border-top: 1px solid $grey;
+}
+
+.nav-bg-white2 ul{
+	display: flex;
+	justify-content: center	;
+	height: 79px;
+	align-items: center;
+}
+.nav-bg-white2 a{
+
+	font-style: 16px;
+	color: black;
+ 	margin: 0 40px 0 0;
+	 transition: 0.2s ease;
+}
+
+.nav-bg-white2 a:hover{
+font-size: 26px;
+
+}
+
+
+.banner {
+	background-image:url(/img/Rectangle2.png);
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 192px;
+}
+
+.baner-item {
+	color: #FFFFFF;
+}
+
+.baner-item h2{
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0 0 50px 0;	
+}
+.baner-item p{
+	max-width: 308px;
+	margin: 0 0 50px 0;
+}
+
+
+
+.baner-item a{
+	border: 2px solid #FFFFFF ;
+border-radius:40px ;
+padding: 10px 55px;
+color: #FFFFFF;
+transition: 0.3s ease;
+}
+
+.baner-item a:hover{
+	background-color: $grey;
+	color: $accent;
+}
+
+
+.offer-title{
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0 0 0;
+	margin-bottom: 16px;
+	align-items: center;
+	&-text{
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+
+.offer-item {
+	display: flex;
+	justify-content: space-between;
+}
+.offer-items {
+	width: 255px;
+	height: 363px;
+	background-color: white;
+	text-align: center;
+	padding: 25px 30px;
+	margin-bottom: 100px;
+	&-image{
+		margin-bottom: 20px;
+	}
+	&-description{
+		margin-bottom: 20px;
+	}
+
+	&-price{
+		font-size: 21px;
+		font-weight: 500;
+		margin: 20px;
+		
+
+	}
+
+	&-btn{
+		background-color: $accent;
+		border-radius: 30px;
+		padding: 9px 40px;
+		color: #FFFFFF;
+		transition: 0.3s ease;
+
+	}
+
+	&-btn:hover{
+		background-color: white;
+		color: $accent;
+		font-size: 23px;
+		font-weight: 700;
+	}
+
+}
+
+
+.offer-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 130px;
+}
+.offer-box-items {
+	width: 540px;
+	height: 212px;
+	background-color: $accent;
+	padding: 35px 40px;
+	color: #ffffff;
+
+	&-title{
+		font-size: 18px;
+		font-weight: 700;
+		margin:0 0 25px 0;
+	}
+	&-description{
+		max-width: 250px;
+		line-height: 20px;
+		margin:0 0 25px 0;
+	}
+
+
+
+}
+
+.offer-box-items input{
+	border: 1px solid#ffffff ;
+	border-radius: 20px;
+	padding: 8px;
+	
+}
+
+.offer-box-items a{
+	color: white;
+	border: 2px solid#ffffff ;
+	border-radius: 20px;
+	padding: 8px;
+	transition: 0.3s ease;
+	
+}
+.offer-box-items a:hover{
+	background-color: #ffffff;
+	color: $dark;
+}
+
+.footer-item{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-item p{
+	color: #828282;
+	font-size: 12px;
+}
